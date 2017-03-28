@@ -1,15 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router'
 
-export default class Index extends React.Component {
+export default class TestContainer extends React.Component {
   render() {
     return (
       <div className="home">
         <div className="athletes-selector">
-          React will do the magic
-          <li><Link to="/test" activeStyle={{ color: 'red' }}>About</Link></li>
+          This is a test container
+          <li><Link to="/" activeStyle={{ color: 'red' }}>Navigate to home</Link></li>
         </div>
-        {this.props.children}
       </div>
     );
   }

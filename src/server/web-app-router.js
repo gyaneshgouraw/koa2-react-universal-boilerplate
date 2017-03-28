@@ -17,6 +17,7 @@ export default function webAppRouter () {
 
 
 router.get('*', function *(){
+	console.log('You should feel happy,you came to server , finally !!')
 	match({ routes, location: this.request.url }, (error, redirectLocation, renderProps) => {
             this.body = renderToString(<RouterContext {...renderProps}/>)
     })
